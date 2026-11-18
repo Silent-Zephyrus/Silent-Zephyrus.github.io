@@ -163,7 +163,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .wf-chip { fill: rgba(74, 141, 255, 0.35); }
 .wf-box { fill: none; stroke: #2b3d65; stroke-width: 1.5; }
 .wf-check { stroke: #061024; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.badge { display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 0.7rem; padding: 0.15rem 0.65rem 0.15rem 0.5rem; font-size: 0.8rem; font-weight: 500; color: #d9d2ff; background: rgba(146, 131, 247, 0.12); border: 1px solid rgba(146, 131, 247, 0.4); border-radius: 6px; }
+.badge { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; padding: 0.15rem 0.65rem 0.15rem 0.5rem; font-size: 0.8rem; font-weight: 500; color: #d9d2ff; background: rgba(146, 131, 247, 0.12); border: 1px solid rgba(146, 131, 247, 0.4); border-radius: 6px; }
+.project-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin-bottom: 0.7rem; }
+.status { margin: 0; display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.82rem; font-weight: 500; color: var(--muted); }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+.status.ongoing::before { background: transparent; box-shadow: inset 0 0 0 2px var(--purple); }
 .badge svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .project-body h3 { font-size: 1.4rem; margin-bottom: 0.4rem; }
 .project-body > p:not(.badge) { color: var(--muted); }
@@ -177,7 +181,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .edu h3 { font-size: 1.15rem; }
 .edu article p:last-child { margin-bottom: 0; }
 .edu article p:not(.when):not(.org) { color: var(--muted); }
-.cred { padding: 1.25rem 1.4rem; border: 1px dashed #3a4d78; border-radius: var(--radius); }
+.edu > article:first-child { grid-column: 1 / -1; }
+.cred { padding: 1.25rem 1.4rem; border: 1px solid var(--line); border-radius: var(--radius); }
+.cred.todo { border: 1px dashed #3a4d78; } /* dashed = still has a placeholder */
 
 .resume { padding-block: clamp(2.5rem, 6vw, 4rem); }
 .resume-panel { display: flex; align-items: center; gap: 1.75rem; padding: clamp(1.4rem, 4vw, 2.2rem) clamp(1.4rem, 4vw, 2.5rem); background: var(--bg-raised); border: 1px solid var(--line); border-left: 3px solid var(--blue); border-radius: var(--radius); }

@@ -20,17 +20,14 @@ Double-click `index.html`, or from the folder run `python -m http.server 8000` a
 
 ## 1. Replace your details
 
-Open `index.html` and search for these placeholders:
+Your email, LinkedIn, employer, dates, projects, skills, education, and the Cisco credential are already filled in from your resume. Two placeholders are left in `index.html`:
 
 | Search for | Replace with |
 |---|---|
-| `YOUR_EMAIL@example.com` (2 places) | your email |
-| `YOUR_GITHUB_USERNAME` | your GitHub username |
-| `YOUR_LINKEDIN_USERNAME` | your LinkedIn username |
-| `[Month Year – Present]`, `[Month Year – Month Year]`, `[Organization Name]` | your real dates and employer |
-| `[Issuing Organization]`, `[Year]` | your NC II certificate details |
+| `YOUR_GITHUB_USERNAME` (Contact section, and in the comment at the top of Projects) | your GitHub username, or delete the GitHub line if you don't have one |
+| `[Issuing Organization]` (Education section) | who issued your Computer Systems Servicing NC II, then delete `todo` from that card's class so the dashed border goes away |
 
-For a phone number, uncomment the `Phone` line in the Contact section. The project feature lists are examples; edit them to match what each system actually does (a reminder sits in an HTML comment at the top of the Projects section). All four projects carry a "Private / Internal Project" badge; delete that line for any project that is public. To add more certifications, copy the `credentials` block in the Education section.
+For a phone number, uncomment the `Phone` line in the Contact section and fill it in. Equipment Inventory System is not on your resume, so its feature list is an example; edit it to match the real system (a reminder sits in an HTML comment at the top of the Projects section). All four projects carry a "Private / Internal Project" badge; delete that line for any project that is public. To add more certifications, copy the `credentials` block in the Education section.
 
 ## Keep the folder structure
 
@@ -38,7 +35,9 @@ For a phone number, uncomment the `Phone` line in the Contact section. The proje
 
 ## 2. Add your resume
 
-Save your PDF as `resume.pdf` in the root folder (next to `index.html`), replacing the placeholder. Both Download buttons use that filename.
+`resume.pdf` in the root folder (next to `index.html`) is your CV. Both Download buttons use that filename. To update it later, replace the file and keep the name.
+
+The PDF is public once the site is live, so anyone can read what is in it. Your current CV includes your phone number, town, and email. If you would rather not publish the phone number or town, save a copy without them as `resume.pdf`.
 
 ## 3. Add project screenshots
 
