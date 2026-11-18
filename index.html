@@ -6,7 +6,7 @@
   <title>Joe Feredel Cabar | IT Support, Systems Administration &amp; Web Development</title>
   <meta name="description" content="Portfolio of Joe Feredel Cabar, an IT Assistant with experience in IT support, CCTV and network troubleshooting, and PHP/MySQL web systems. BS Information Technology, ISAT University.">
   <meta name="author" content="Joe Feredel Cabar">
-  <meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#0a1224">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Joe Feredel Cabar | IT Support, Systems Administration &amp; Web Development">
   <meta property="og:description" content="IT Assistant focused on reliable support, infrastructure basics, and practical internal web systems.">
@@ -45,7 +45,8 @@
   </header>
 
   <main id="main">
-    <!-- HERO -->
+
+    <!-- ============ HERO ============ -->
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -59,170 +60,322 @@
             <a class="btn btn-ghost" href="#contact">Contact Me</a>
           </div>
         </div>
-        <div class="terminal" role="img" aria-label="Terminal-style card listing focus areas: IT support, systems administration, web development">
-          <div class="terminal-bar"><i></i><i></i><i></i><span>joe@workstation ~</span></div>
-<pre><span class="c-dim">$</span> whoami
-joe-feredel-cabar
-<span class="c-dim">$</span> focus --list
-  <span class="c-blue">[x]</span> it-support
-  <span class="c-blue">[x]</span> systems-administration
-  <span class="c-blue">[x]</span> web-development
-<span class="c-dim">$</span> ticket status --open
-  <span class="c-purple">ready to help</span><span class="cursor">_</span></pre>
-        </div>
+
+        <!-- Support map: the areas of work listed in the Experience section, with IT Support at the center.
+             Node positions are set in style.css (.n1 to .n5). If you move a node, update its line below. -->
+        <figure class="map" aria-label="Diagram: IT Assistant at the center, connected to computers, printers, CCTV, network, and web systems">
+          <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <polygon class="ring" points="50,11 86,38 72,84 28,84 14,38"/>
+            <line class="spoke" x1="50" y1="50" x2="50" y2="11"/>
+            <line class="spoke" x1="50" y1="50" x2="86" y2="38"/>
+            <line class="spoke" x1="50" y1="50" x2="72" y2="84"/>
+            <line class="spoke" x1="50" y1="50" x2="28" y2="84"/>
+            <line class="spoke" x1="50" y1="50" x2="14" y2="38"/>
+          </svg>
+          <div class="hub">
+            <span class="hub-ports" aria-hidden="true"><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></span>
+            <strong>IT Assistant</strong>
+          </div>
+          <ul class="nodes">
+            <li class="node n1">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+              <span class="node-label">Computers</span>
+            </li>
+            <li class="node n2">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3h10v6"/><path d="M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"/><rect x="7" y="14" width="10" height="7" rx="1"/></svg></span>
+              <span class="node-label">Printers</span>
+            </li>
+            <li class="node n3">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.75 12h3.63a1 1 0 0 1 .89 1.45l-2.03 4.07a1 1 0 0 1-1.71.13l-2.12-2.97"/><path d="M17.1 9.05a1 1 0 0 1 .45 1.34l-3.1 6.21a1 1 0 0 1-1.34.45L3.6 12.3a2.92 2.92 0 0 1-1.3-3.91L3.69 5.6a2.92 2.92 0 0 1 3.92-1.3z"/><path d="M2 19h3.76a2 2 0 0 0 1.8-1.1L9 15M2 21v-4M7 9h.01"/></svg></span>
+              <span class="node-label">CCTV</span>
+            </li>
+            <li class="node n4">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M10 13l-2 2 2 2M14 13l2 2-2 2"/></svg></span>
+              <span class="node-label">Web systems</span>
+            </li>
+            <li class="node n5">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-4h12v4"/></svg></span>
+              <span class="node-label">Network</span>
+            </li>
+          </ul>
+        </figure>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ============ ABOUT ============ -->
     <section class="section" id="about">
-      <div class="container narrow reveal">
-        <h2>About me</h2>
-        <p>I enjoy solving technology problems that affect everyday work, from hardware and software issues to internal systems that need to be more reliable.</p>
-        <p>I hold a Bachelor of Science in Information Technology from ISAT University and started with an ICT track in Computer Systems Servicing. As an IT Assistant, I handle user support, troubleshooting, equipment upkeep, and CCTV and basic network concerns, and I build and improve internal web systems with PHP, MySQL, and JavaScript.</p>
-      </div>
-    </section>
+      <div class="container split">
+        <div class="rail"><h2>About me</h2></div>
+        <div class="body reveal">
+          <p class="intro">I enjoy solving technology problems that affect everyday work, from hardware and software issues to internal systems that need to be more reliable.</p>
+          <p>I hold a Bachelor of Science in Information Technology from ISAT University and started with an ICT track in Computer Systems Servicing. As an IT Assistant, I handle user support, troubleshooting, equipment upkeep, and CCTV and basic network concerns, and I build and improve internal web systems with PHP, MySQL, and JavaScript.</p>
 
-    <!-- SKILLS -->
-    <section class="section alt" id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="grid grid-2">
-          <article class="card reveal"><h3>IT support</h3><ul class="tags">
-            <li>Windows troubleshooting</li><li>Hardware troubleshooting</li><li>Software troubleshooting</li><li>Printer troubleshooting</li><li>Peripheral troubleshooting</li><li>User technical support</li><li>IT equipment maintenance</li></ul></article>
-          <article class="card reveal"><h3>Web development</h3><ul class="tags">
-            <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Laravel</li><li>CRUD systems</li><li>Responsive web interfaces</li></ul></article>
-          <article class="card reveal"><h3>Systems and infrastructure</h3><ul class="tags">
-            <li>CCTV systems</li><li>CCTV monitoring</li><li>Basic LAN/network troubleshooting</li><li>XAMPP</li><li>Web hosting</li><li>FTP</li><li>SSL/TLS</li><li>Cloudflare</li><li>Git</li><li>GitHub</li></ul></article>
-          <article class="card reveal"><h3>Tools</h3><ul class="tags">
-            <li>VS Code</li><li>Figma</li><li>WordPress</li><li>Microsoft Office</li><li>GitHub</li></ul></article>
+          <div class="terminal">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>profile</span></div>
+            <p class="term-cmd"><b>$</b> cat profile.txt</p>
+            <dl class="term-body">
+              <div><dt>role</dt><dd>IT Assistant</dd></div>
+              <div><dt>focus</dt><dd>IT support, systems administration, web development</dd></div>
+              <div><dt>degree</dt><dd>BS Information Technology, ISAT University</dd></div>
+              <div><dt>track</dt><dd>ICT, Computer Systems Servicing</dd></div>
+              <div><dt>ojt</dt><dd>Philippine Science High School – Western Visayas Campus</dd></div>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container split">
+        <div class="rail"><h2>Skills</h2></div>
+        <div class="body">
+          <div class="skill-row reveal">
+            <h3>IT support</h3>
+            <ul class="tags">
+              <li>Windows troubleshooting</li><li>Hardware troubleshooting</li><li>Software troubleshooting</li><li>Printer troubleshooting</li><li>Peripheral troubleshooting</li><li>User technical support</li><li>IT equipment maintenance</li>
+            </ul>
+          </div>
+          <div class="skill-row reveal">
+            <h3>Web development</h3>
+            <ul class="tags">
+              <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Laravel</li><li>CRUD systems</li><li>Responsive web interfaces</li>
+            </ul>
+          </div>
+          <div class="skill-row reveal">
+            <h3>Systems and infrastructure</h3>
+            <ul class="tags">
+              <li>CCTV systems</li><li>CCTV monitoring</li><li>Basic LAN/network troubleshooting</li><li>XAMPP</li><li>Web hosting</li><li>FTP</li><li>SSL/TLS</li><li>Cloudflare</li><li>Git</li><li>GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-row reveal">
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>VS Code</li><li>Figma</li><li>WordPress</li><li>Microsoft Office</li><li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
     <section class="section" id="experience">
-      <div class="container narrow">
-        <h2>Experience</h2>
-        <ol class="timeline">
-          <li class="reveal">
+      <div class="container split">
+        <div class="rail"><h2>Experience</h2></div>
+        <ol class="body log">
+          <li class="entry current reveal">
             <p class="when">[Month Year – Present]</p>
-            <h3>IT Assistant</h3>
-            <p class="org">[Organization Name]</p>
-            <ul class="list">
-              <li>User technical support</li><li>Computer troubleshooting</li><li>Printer troubleshooting</li><li>Software troubleshooting</li><li>IT equipment support</li><li>CCTV support</li><li>Basic network troubleshooting</li><li>Internal system support</li>
-            </ul>
+            <div class="entry-main">
+              <h3>IT Assistant</h3>
+              <p class="org">[Organization Name]</p>
+              <ul class="checks">
+                <li>User technical support</li><li>Computer troubleshooting</li><li>Printer troubleshooting</li><li>Software troubleshooting</li><li>IT equipment support</li><li>CCTV support</li><li>Basic network troubleshooting</li><li>Internal system support</li>
+              </ul>
+            </div>
           </li>
-          <li class="reveal">
+          <li class="entry reveal">
             <p class="when">[Month Year – Month Year]</p>
-            <h3>IT / Systems OJT</h3>
-            <p class="org">Philippine Science High School – Western Visayas Campus</p>
-            <ul class="list">
-              <li>CCTV monitoring and technical support</li>
-              <li>Web/system development, including a school clearance system</li>
-              <li>Computer support, cabling/crimping, and printing/event technology support</li>
-            </ul>
-            <ul class="tags"><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>XAMPP</li><li>VS Code</li><li>GitHub</li><li>FTP</li><li>Web hosting</li><li>SSL/TLS</li><li>WordPress</li><li>Figma</li></ul>
+            <div class="entry-main">
+              <h3>IT / Systems OJT</h3>
+              <p class="org">Philippine Science High School – Western Visayas Campus</p>
+              <ul class="checks">
+                <li>CCTV monitoring</li><li>Technical support</li><li>Web/system development</li><li>Developed and completed a clearance system</li><li>Computer support</li><li>Cabling and crimping</li><li>Printing and event technology support</li>
+              </ul>
+              <ul class="tags">
+                <li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>XAMPP</li><li>VS Code</li><li>GitHub</li><li>FTP</li><li>Web hosting</li><li>SSL/TLS</li><li>WordPress</li><li>Figma</li>
+              </ul>
+            </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section alt" id="projects">
-      <div class="container">
-        <h2>Featured projects</h2>
-        <p class="sub">Features listed are examples. Edit them to match what each system actually does.</p>
-        <!-- To add buttons to a project, paste inside its .project-links div:
-             <a class="btn btn-ghost btn-sm" href="https://github.com/YOUR_GITHUB_USERNAME/REPO" target="_blank" rel="noopener">GitHub</a>
-             <a class="btn btn-ghost btn-sm" href="https://YOUR-LIVE-DEMO-URL" target="_blank" rel="noopener">Live Demo</a>
-             To use a real screenshot, replace the .shot div with:
-             <img class="shot" src="assets/images/FILE.jpg" alt="Describe the screenshot" loading="lazy" width="800" height="450"> -->
-        <div class="grid grid-2">
-          <article class="card project reveal">
-            <div class="shot" aria-label="Screenshot placeholder for IT Ticketing System"><span>Screenshot placeholder</span></div>
-            <p class="badge">Private / Internal Project</p>
-            <h3>IT Ticketing System</h3>
-            <p>A web-based IT support system for recording IT concerns, assigning tickets, tracking ticket status, and improving support workflow.</p>
-            <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SMTP/email</li></ul>
-            <ul class="list"><li>Ticket creation and assignment</li><li>Status tracking</li><li>User management</li><li>Email notifications</li></ul>
-            <div class="project-links"></div>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container split">
+        <div class="rail"><h2>Featured projects</h2></div>
+        <div class="body projects">
+          <!-- EDITING NOTES
+               1. The feature lists below are examples. Edit them so they match what each system actually does.
+               2. To add buttons, paste inside a project's empty <div class="project-links"></div>:
+                  <a class="btn btn-ghost btn-sm" href="https://github.com/YOUR_GITHUB_USERNAME/REPO" target="_blank" rel="noopener">GitHub</a>
+                  <a class="btn btn-ghost btn-sm" href="https://YOUR-LIVE-DEMO-URL" target="_blank" rel="noopener">Live Demo</a>
+               3. To use a real screenshot, replace the whole <div class="mock">...</div> with:
+                  <img class="mock" src="assets/images/FILE.jpg" alt="Describe the screenshot" loading="lazy" width="800" height="500">
+                  Only use screenshots that show no private data. -->
+
+          <article class="project reveal">
+            <div class="mock" role="img" aria-label="Placeholder mockup for the IT Ticketing System. Replace with a screenshot.">
+              <svg viewBox="0 0 320 200" aria-hidden="true" focusable="false">
+                <rect class="wf-chrome" width="320" height="22"/>
+                <circle class="wf-bar2" cx="12" cy="11" r="3"/><circle class="wf-bar2" cx="23" cy="11" r="3"/><circle class="wf-bar2" cx="34" cy="11" r="3"/>
+                <rect class="wf-bar" x="52" y="6" width="150" height="10" rx="5"/>
+                <rect class="wf-side" y="22" width="56" height="178"/>
+                <rect class="wf-blue" x="10" y="38" width="36" height="6" rx="3"/>
+                <rect class="wf-bar" x="10" y="54" width="30" height="6" rx="3"/><rect class="wf-bar" x="10" y="70" width="36" height="6" rx="3"/><rect class="wf-bar" x="10" y="86" width="26" height="6" rx="3"/>
+                <rect class="wf-bar2" x="72" y="34" width="90" height="8" rx="4"/>
+                <rect class="wf-blue" x="246" y="30" width="56" height="14" rx="4"/>
+                <path class="wf-line" d="M72 56h236M72 82h236M72 108h236M72 134h236M72 160h236"/>
+                <circle class="wf-blue" cx="80" cy="69" r="4"/><rect class="wf-bar2" x="94" y="66" width="110" height="6" rx="3"/><rect class="wf-bar" x="220" y="66" width="36" height="6" rx="3"/><rect class="wf-bar2" x="266" y="64" width="36" height="10" rx="5"/>
+                <circle class="wf-purple" cx="80" cy="95" r="4"/><rect class="wf-bar2" x="94" y="92" width="90" height="6" rx="3"/><rect class="wf-bar" x="220" y="92" width="36" height="6" rx="3"/><rect class="wf-bar2" x="266" y="90" width="36" height="10" rx="5"/>
+                <circle class="wf-bar" cx="80" cy="121" r="4"/><rect class="wf-bar2" x="94" y="118" width="120" height="6" rx="3"/><rect class="wf-bar" x="220" y="118" width="36" height="6" rx="3"/><rect class="wf-bar2" x="266" y="116" width="36" height="10" rx="5"/>
+                <circle class="wf-blue" cx="80" cy="147" r="4"/><rect class="wf-bar2" x="94" y="144" width="100" height="6" rx="3"/><rect class="wf-bar" x="220" y="144" width="36" height="6" rx="3"/><rect class="wf-bar2" x="266" y="142" width="36" height="10" rx="5"/>
+                <circle class="wf-purple" cx="80" cy="173" r="4"/><rect class="wf-bar2" x="94" y="170" width="80" height="6" rx="3"/><rect class="wf-bar" x="220" y="170" width="36" height="6" rx="3"/><rect class="wf-bar2" x="266" y="168" width="36" height="10" rx="5"/>
+              </svg>
+              <span class="mock-tag">Placeholder</span>
+            </div>
+            <div class="project-body">
+              <p class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Private / Internal Project</p>
+              <h3>IT Ticketing System</h3>
+              <p>A web-based IT support system for recording IT concerns, assigning tickets, tracking ticket status, and improving support workflow.</p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SMTP/email</li></ul>
+              <ul class="checks"><li>Ticket creation and assignment</li><li>Status tracking</li><li>User management</li><li>Email notifications</li></ul>
+              <div class="project-links"></div>
+            </div>
           </article>
-          <article class="card project reveal">
-            <div class="shot" aria-label="Screenshot placeholder for InternEase"><span>Screenshot placeholder</span></div>
-            <p class="badge">Private / Internal Project</p>
-            <h3>InternEase</h3>
-            <p>An internship management system for managing interns, supervisors, coordinators, records, and internship-related workflows.</p>
-            <ul class="tags"><li>PHP</li><li>MySQL</li><li>PDO</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-            <ul class="list"><li>Intern, supervisor, and coordinator roles</li><li>Internship records</li><li>Workflow management</li></ul>
-            <div class="project-links"></div>
+
+          <article class="project reveal">
+            <div class="mock" role="img" aria-label="Placeholder mockup for InternEase. Replace with a screenshot.">
+              <svg viewBox="0 0 320 200" aria-hidden="true" focusable="false">
+                <rect class="wf-chrome" width="320" height="22"/>
+                <circle class="wf-bar2" cx="12" cy="11" r="3"/><circle class="wf-bar2" cx="23" cy="11" r="3"/><circle class="wf-bar2" cx="34" cy="11" r="3"/>
+                <rect class="wf-bar" x="52" y="6" width="150" height="10" rx="5"/>
+                <circle class="wf-blue" cx="28" cy="46" r="8"/><rect class="wf-bar2" x="42" y="41" width="50" height="6" rx="3"/><rect class="wf-bar" x="42" y="51" width="34" height="4" rx="2"/>
+                <circle class="wf-purple" cx="132" cy="46" r="8"/><rect class="wf-bar2" x="146" y="41" width="50" height="6" rx="3"/><rect class="wf-bar" x="146" y="51" width="34" height="4" rx="2"/>
+                <circle class="wf-bar2" cx="236" cy="46" r="8"/><rect class="wf-bar2" x="250" y="41" width="50" height="6" rx="3"/><rect class="wf-bar" x="250" y="51" width="34" height="4" rx="2"/>
+                <g class="wf-card"><rect x="16" y="68" width="92" height="36" rx="6"/><rect x="120" y="68" width="92" height="36" rx="6"/><rect x="224" y="68" width="80" height="36" rx="6"/>
+                <rect x="16" y="112" width="92" height="36" rx="6"/><rect x="120" y="112" width="92" height="36" rx="6"/><rect x="224" y="112" width="80" height="36" rx="6"/>
+                <rect x="16" y="156" width="92" height="30" rx="6"/><rect x="120" y="156" width="92" height="30" rx="6"/></g>
+                <rect class="wf-bar2" x="26" y="78" width="60" height="6" rx="3"/><rect class="wf-bar" x="26" y="90" width="40" height="5" rx="2.5"/>
+                <rect class="wf-bar2" x="130" y="78" width="50" height="6" rx="3"/><rect class="wf-blue" x="130" y="90" width="26" height="5" rx="2.5"/>
+                <rect class="wf-bar2" x="234" y="78" width="54" height="6" rx="3"/><rect class="wf-bar" x="234" y="90" width="36" height="5" rx="2.5"/>
+                <rect class="wf-bar2" x="26" y="122" width="52" height="6" rx="3"/><rect class="wf-purple" x="26" y="134" width="30" height="5" rx="2.5"/>
+                <rect class="wf-bar2" x="130" y="122" width="62" height="6" rx="3"/><rect class="wf-bar" x="130" y="134" width="38" height="5" rx="2.5"/>
+                <rect class="wf-bar2" x="234" y="122" width="40" height="6" rx="3"/><rect class="wf-bar" x="234" y="134" width="30" height="5" rx="2.5"/>
+              </svg>
+              <span class="mock-tag">Placeholder</span>
+            </div>
+            <div class="project-body">
+              <p class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Private / Internal Project</p>
+              <h3>InternEase</h3>
+              <p>An internship management system for managing interns, supervisors, coordinators, records, and internship-related workflows.</p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>PDO</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <ul class="checks"><li>Intern, supervisor, and coordinator roles</li><li>Internship records</li><li>Workflow management</li></ul>
+              <div class="project-links"></div>
+            </div>
           </article>
-          <article class="card project reveal">
-            <div class="shot" aria-label="Screenshot placeholder for Equipment Inventory System"><span>Screenshot placeholder</span></div>
-            <p class="badge">Private / Internal Project</p>
-            <h3>Equipment Inventory System</h3>
-            <p>A web-based IT equipment inventory for managing equipment, buildings, rooms, property codes, and equipment records.</p>
-            <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>PDF generation</li></ul>
-            <ul class="list"><li>Equipment records</li><li>Building and room tracking</li><li>Property codes</li><li>PDF reports</li></ul>
-            <div class="project-links"></div>
+
+          <article class="project reveal">
+            <div class="mock" role="img" aria-label="Placeholder mockup for the Equipment Inventory System. Replace with a screenshot.">
+              <svg viewBox="0 0 320 200" aria-hidden="true" focusable="false">
+                <rect class="wf-chrome" width="320" height="22"/>
+                <circle class="wf-bar2" cx="12" cy="11" r="3"/><circle class="wf-bar2" cx="23" cy="11" r="3"/><circle class="wf-bar2" cx="34" cy="11" r="3"/>
+                <rect class="wf-bar" x="52" y="6" width="150" height="10" rx="5"/>
+                <rect class="wf-side" x="12" y="34" width="100" height="154" rx="6"/>
+                <rect class="wf-blue" x="22" y="46" width="56" height="6" rx="3"/>
+                <rect class="wf-bar2" x="34" y="62" width="44" height="5" rx="2.5"/><rect class="wf-bar2" x="34" y="76" width="52" height="5" rx="2.5"/><rect class="wf-bar2" x="34" y="90" width="40" height="5" rx="2.5"/>
+                <rect class="wf-bar" x="22" y="110" width="62" height="6" rx="3"/>
+                <rect class="wf-bar" x="34" y="126" width="46" height="5" rx="2.5"/><rect class="wf-bar" x="34" y="140" width="38" height="5" rx="2.5"/>
+                <rect class="wf-bar" x="22" y="160" width="50" height="6" rx="3"/>
+                <rect class="wf-bar2" x="124" y="34" width="184" height="14" rx="4"/>
+                <path class="wf-line" d="M124 74h184M124 100h184M124 126h184M124 152h184M124 178h184"/>
+                <g class="wf-bar"><rect x="130" y="58" width="60" height="6" rx="3"/><rect x="130" y="84" width="52" height="6" rx="3"/><rect x="130" y="110" width="66" height="6" rx="3"/><rect x="130" y="136" width="48" height="6" rx="3"/><rect x="130" y="162" width="58" height="6" rx="3"/></g>
+                <g class="wf-bar2"><rect x="210" y="58" width="30" height="6" rx="3"/><rect x="210" y="84" width="30" height="6" rx="3"/><rect x="210" y="110" width="30" height="6" rx="3"/><rect x="210" y="136" width="30" height="6" rx="3"/><rect x="210" y="162" width="30" height="6" rx="3"/></g>
+                <g class="wf-purple"><rect x="258" y="56" width="42" height="10" rx="5"/><rect x="258" y="82" width="42" height="10" rx="5"/><rect x="258" y="108" width="42" height="10" rx="5"/><rect x="258" y="134" width="42" height="10" rx="5"/><rect x="258" y="160" width="42" height="10" rx="5"/></g>
+              </svg>
+              <span class="mock-tag">Placeholder</span>
+            </div>
+            <div class="project-body">
+              <p class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Private / Internal Project</p>
+              <h3>Equipment Inventory System</h3>
+              <p>A web-based IT equipment inventory for managing equipment, buildings, rooms, property codes, and equipment records.</p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>PDF generation</li></ul>
+              <ul class="checks"><li>Equipment records</li><li>Building and room tracking</li><li>Property codes</li><li>PDF reports</li></ul>
+              <div class="project-links"></div>
+            </div>
           </article>
-          <article class="card project reveal">
-            <div class="shot" aria-label="Screenshot placeholder for School Clearance System"><span>Screenshot placeholder</span></div>
-            <p class="badge">Private / Internal Project</p>
-            <h3>School Clearance System</h3>
-            <p>A clearance system developed during OJT to help organize clearance processing and reduce manual handling.</p>
-            <ul class="tags"><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li></ul>
-            <ul class="list"><li>Organized clearance processing</li><li>Less manual handling</li></ul>
-            <div class="project-links"></div>
+
+          <article class="project reveal">
+            <div class="mock" role="img" aria-label="Placeholder mockup for the School Clearance System. Replace with a screenshot.">
+              <svg viewBox="0 0 320 200" aria-hidden="true" focusable="false">
+                <rect class="wf-chrome" width="320" height="22"/>
+                <circle class="wf-bar2" cx="12" cy="11" r="3"/><circle class="wf-bar2" cx="23" cy="11" r="3"/><circle class="wf-bar2" cx="34" cy="11" r="3"/>
+                <rect class="wf-bar" x="52" y="6" width="150" height="10" rx="5"/>
+                <rect class="wf-bar2" x="20" y="38" width="100" height="8" rx="4"/>
+                <rect class="wf-bar" x="20" y="56" width="280" height="8" rx="4"/><rect class="wf-blue" x="20" y="56" width="180" height="8" rx="4"/>
+                <path class="wf-line" d="M20 84h280M20 114h280M20 144h280"/>
+                <rect class="wf-blue" x="20" y="92" width="14" height="14" rx="3"/><path class="wf-check" d="M23 99l3 3 5-6"/>
+                <rect class="wf-bar2" x="44" y="96" width="150" height="6" rx="3"/><rect class="wf-chip" x="250" y="94" width="50" height="10" rx="5"/>
+                <rect class="wf-blue" x="20" y="122" width="14" height="14" rx="3"/><path class="wf-check" d="M23 129l3 3 5-6"/>
+                <rect class="wf-bar2" x="44" y="126" width="120" height="6" rx="3"/><rect class="wf-chip" x="250" y="124" width="50" height="10" rx="5"/>
+                <rect class="wf-blue" x="20" y="152" width="14" height="14" rx="3"/><path class="wf-check" d="M23 159l3 3 5-6"/>
+                <rect class="wf-bar2" x="44" y="156" width="170" height="6" rx="3"/><rect class="wf-chip" x="250" y="154" width="50" height="10" rx="5"/>
+                <rect class="wf-box" x="20" y="176" width="14" height="14" rx="3"/>
+                <rect class="wf-bar2" x="44" y="180" width="100" height="6" rx="3"/><rect class="wf-purple" x="250" y="178" width="50" height="10" rx="5"/>
+              </svg>
+              <span class="mock-tag">Placeholder</span>
+            </div>
+            <div class="project-body">
+              <p class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Private / Internal Project</p>
+              <h3>School Clearance System</h3>
+              <p>A clearance system developed during OJT to help organize clearance processing and reduce manual handling.</p>
+              <ul class="tags"><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li></ul>
+              <ul class="checks"><li>Organized clearance processing</li><li>Less manual handling</li></ul>
+              <div class="project-links"></div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- ============ EDUCATION + CREDENTIALS ============ -->
     <section class="section" id="education">
-      <div class="container">
-        <h2>Education and credentials</h2>
-        <div class="grid grid-2">
-          <article class="card reveal">
+      <div class="container split">
+        <div class="rail"><h2>Education and credentials</h2></div>
+        <div class="body edu">
+          <article class="reveal">
             <p class="when">Class of 2023–2024</p>
             <h3>Bachelor of Science in Information Technology</h3>
             <p class="org">ISAT University</p>
-            <p>Prior ICT track with a Computer Systems Servicing background.</p>
+            <p>Earlier ICT track with a Computer Systems Servicing background.</p>
           </article>
-          <article class="card reveal">
+          <!-- Credentials: replace the bracketed placeholders. Copy this whole <article> to add more certifications. -->
+          <article class="cred reveal" id="credentials">
             <p class="when">[Year]</p>
             <h3>Computer Systems Servicing NC II</h3>
             <p class="org">[Issuing Organization]</p>
-            <p>Add credential details here, or duplicate this card for more certifications.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- RESUME -->
-    <section class="section alt" id="resume">
+    <!-- ============ RESUME ============ -->
+    <section class="section resume" id="resume">
       <div class="container">
-        <div class="cta reveal">
-          <div>
+        <div class="resume-panel reveal">
+          <svg class="doc-icon" viewBox="0 0 48 60" aria-hidden="true" focusable="false"><path d="M6 4h26l10 10v42H6z"/><path d="M32 4v10h10M14 26h20M14 34h20M14 42h12"/></svg>
+          <div class="resume-text">
             <h2>Resume</h2>
-            <p>A one-page summary of my experience, skills, and education.</p>
+            <p>A summary of my experience, skills, and education.</p>
           </div>
           <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ============ CONTACT ============ -->
     <section class="section" id="contact">
-      <div class="container narrow reveal">
-        <h2>Contact</h2>
-        <p>I'm open to IT support, systems administration, and web development opportunities. Reach out through any of these:</p>
-        <ul class="contact-list">
-          <li><span>Email</span><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></li>
-          <li><span>GitHub</span><a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">github.com/YOUR_GITHUB_USERNAME</a></li>
-          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank" rel="noopener">linkedin.com/in/YOUR_LINKEDIN_USERNAME</a></li>
-          <!-- Optional phone: <li><span>Phone</span><a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a></li> -->
-        </ul>
+      <div class="container split">
+        <div class="rail"><h2>Contact</h2></div>
+        <div class="body reveal">
+          <p class="intro">I'm open to IT support, systems administration, and web development opportunities.</p>
+          <a class="mail" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+          <ul class="contact-list">
+            <li><span>GitHub</span><a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">github.com/YOUR_GITHUB_USERNAME</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank" rel="noopener">linkedin.com/in/YOUR_LINKEDIN_USERNAME</a></li>
+            <!-- Optional phone: <li><span>Phone</span><a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a></li> -->
+          </ul>
+        </div>
       </div>
     </section>
   </main>

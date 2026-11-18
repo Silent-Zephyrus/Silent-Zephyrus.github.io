@@ -30,7 +30,11 @@ Open `index.html` and search for these placeholders:
 | `[Month Year – Present]`, `[Month Year – Month Year]`, `[Organization Name]` | your real dates and employer |
 | `[Issuing Organization]`, `[Year]` | your NC II certificate details |
 
-For a phone number, uncomment the `Phone` line in the Contact section. Project features are examples; edit them to match what each system actually does. All four projects carry a "Private / Internal Project" badge; delete that line for any project that is public.
+For a phone number, uncomment the `Phone` line in the Contact section. The project feature lists are examples; edit them to match what each system actually does (a reminder sits in an HTML comment at the top of the Projects section). All four projects carry a "Private / Internal Project" badge; delete that line for any project that is public. To add more certifications, copy the `credentials` block in the Education section.
+
+## Keep the folder structure
+
+`index.html` must sit at the root, next to `resume.pdf` and `favicon.svg`, with the `assets` folder beside it (`assets/css/style.css`, `assets/js/script.js`). If the CSS and JS files are uploaded loose at the root instead, the page loads with no styling. Upload the contents of this folder as they are, with the `assets` folder intact.
 
 ## 2. Add your resume
 
@@ -38,11 +42,13 @@ Save your PDF as `resume.pdf` in the root folder (next to `index.html`), replaci
 
 ## 3. Add project screenshots
 
-Only use screenshots with no private data (names, IDs, credentials, internal URLs). Put images in `assets/images/`, then in `index.html` replace the `<div class="shot">...</div>` of a project with:
+Only use screenshots with no private data (names, IDs, credentials, internal URLs). Put images in `assets/images/`, then in `index.html` replace the whole `<div class="mock">...</div>` of a project (the wireframe with the "Placeholder" tag) with:
 
 ```html
-<img class="shot" src="assets/images/ticketing.jpg" alt="IT Ticketing System dashboard" loading="lazy" width="800" height="450">
+<img class="mock" src="assets/images/ticketing.jpg" alt="IT Ticketing System dashboard" loading="lazy" width="800" height="500">
 ```
+
+Use a 16:10 image (for example 1600 x 1000) so it fills the frame without cropping.
 
 To show GitHub or Live Demo buttons, paste the snippets from the comment at the top of the Projects section into that project's empty `project-links` div.
 
@@ -81,6 +87,11 @@ If you use Cloudflare DNS, set the records to "DNS only" until GitHub finishes i
 ## Update the portfolio later
 
 Edit files on GitHub (pencil icon) or on your computer, then commit and push. The site redeploys automatically within a minute or two. Hard-refresh (Ctrl+Shift+R) if you don't see changes.
+
+## Change the look
+
+- Colors and fonts: the variables at the top of `assets/css/style.css` (`--bg`, `--blue`, `--purple`, and so on).
+- Hero map: the five nodes (Computers, Printers, CCTV, Web systems, Network) are in `index.html`. Edit a label there. If you move a node, change its position in the `.n1` to `.n5` rules in the CSS and the matching `<line>` in the map's SVG.
 
 ## Never publish
 
